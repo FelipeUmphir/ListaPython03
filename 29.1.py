@@ -1,7 +1,5 @@
 #Início
-def investimento():
-    T = int(input("Digite o tipo de investimento:"))
-
+def investimento(T):
     if (T > 2):
         print("Tipo de investimento inválido")
         return
@@ -16,7 +14,8 @@ def investimento():
         print(f"O valor corrigido é {VC} reais")
 
 def main():
-    investimento()
+    T = int(input("Digite o tipo de investimento:"))
+    investimento(T)
 
 main()
 #Fim
